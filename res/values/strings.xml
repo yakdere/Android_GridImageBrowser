@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ImageBrowser</string>
+    <string name="action_settings">Settings</string>
+    <string name="bSearch">Search</string>
+    <string name="etQuery">Find Images</string>
+    <string name="title_activity_image_display">ImageDisplay</string>
+    <string name="SiteFilter">Site Filter</string>
+    <string name="title_activity_filter">FilterActivity</string>
+    <string name="ImageSize">Image Size</string>
+    <string name="ColorFilter">Color Filter</string>
+    <string name="ImageType">Image Type</string>
+    <string name="bSave">Save</string>
+    <string name="FilterTitle">Advanced Search Options</string>
+    <string name="filter_icon">Filter</string>
+
+    <string-array name="sizes">
+        <item>Small</item>
+        <item>Medium</item>
+        <item>Large</item>
+    </string-array>
+    <string-array name="types">
+        <item>unset</item>
+        <item>face</item>
+        <item>photo</item>
+        <item>clipart</item>
+        <item>lineart</item>
+    </string-array>
+    <string-array name="colors">
+        <item>unset</item>
+        <item>black</item>
+        <item>blue</item>
+        <item>brown</item>
+        <item>gray</item>
+        <item>green</item>
+        <item>orange</item>
+        <item>pink</item>
+        <item>purple</item>
+        <item>red</item>
+        <item>teal</item>
+        <item>white</item>
+        <item>yellow</item>
+    </string-array>
+
+    <string name="hello_world">Hello world!</string>
+
+</resources>
