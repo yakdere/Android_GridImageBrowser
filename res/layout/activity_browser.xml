@@ -27,7 +27,7 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:text="@string/bSearch"
-        android:onClick="onImageSearch" />
+        android:onClick="onStartSearch" />
 
     <GridView
         android:id="@+id/gvResult"

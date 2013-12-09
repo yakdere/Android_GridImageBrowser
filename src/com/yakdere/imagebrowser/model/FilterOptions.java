@@ -1,4 +1,4 @@
-package com.yakdere.imagebrowser;
+package com.yakdere.imagebrowser.model;
 
 import java.io.Serializable;
 

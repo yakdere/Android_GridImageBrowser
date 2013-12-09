@@ -1,4 +1,4 @@
-package com.yakdere.imagebrowser;
+package com.yakdere.imagebrowser.utility;
 
 import android.widget.AbsListView;
 import android.widget.AbsListView.OnScrollListener;

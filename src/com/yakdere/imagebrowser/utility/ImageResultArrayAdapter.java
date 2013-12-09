@@ -1,4 +1,4 @@
-package com.yakdere.imagebrowser;
+package com.yakdere.imagebrowser.utility;
 
 import java.util.List;
 
@@ -9,6 +9,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 
 import com.loopj.android.image.SmartImageView;
+import com.yakdere.imagebrowser.R;
+import com.yakdere.imagebrowser.model.ImageResult;
 
 public class ImageResultArrayAdapter extends ArrayAdapter<ImageResult> {
     

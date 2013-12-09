@@ -16,19 +16,24 @@
     <string name="filter_icon">Filter</string>
 
     <string-array name="sizes">
-        <item>Small</item>
-        <item>Medium</item>
-        <item>Large</item>
+        <item>all</item>
+        <item>icon</item>
+        <item>small</item>
+        <item>medium</item>
+        <item>large</item>
+        <item>xlarge</item>
+        <item>xxlarge</item>
+        <item>huge</item>
     </string-array>
     <string-array name="types">
-        <item>unset</item>
+        <item>all</item>
         <item>face</item>
         <item>photo</item>
         <item>clipart</item>
         <item>lineart</item>
     </string-array>
     <string-array name="colors">
-        <item>unset</item>
+        <item>all</item>
         <item>black</item>
         <item>blue</item>
         <item>brown</item>
@@ -42,7 +47,5 @@
         <item>white</item>
         <item>yellow</item>
     </string-array>
-
-    <string name="hello_world">Hello world!</string>
 
 </resources>
