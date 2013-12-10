@@ -6,7 +6,31 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
     tools:context=".BrowserActivity" >
+
+    <GridView
+        android:id="@+id/gvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bSearch"
+        android:numColumns="3" >
+
+    </GridView>
+
+    <Button
+        android:id="@+id/bSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blue_button"
+        android:onClick="onStartSearch"
+        android:text="@string/bSearch"
+        android:textColor="@android:color/white" />
 
     <EditText
         android:id="@+id/etQuery"
@@ -14,28 +38,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:hint="@string/etQuery"
-        android:ems="10" >
+        android:ems="10"
+        android:hint="@string/etQuery" >
 
         <requestFocus />
     </EditText>
-
-    <Button
-        android:id="@+id/bSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:text="@string/bSearch"
-        android:onClick="onStartSearch" />
-
-    <GridView
-        android:id="@+id/gvResult"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/bSearch"
-        android:numColumns="3" >
-    </GridView>
 
 </RelativeLayout>

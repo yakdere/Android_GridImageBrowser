@@ -6,6 +6,7 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.Menu;
 import com.actionbarsherlock.view.MenuItem;
@@ -20,6 +21,8 @@ import com.yakdere.imagebrowser.utility.ImageResultArrayAdapter;
 import android.net.Uri;
 import android.os.Bundle;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -42,6 +45,9 @@ public class BrowserActivity extends SherlockActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_browser);
+		ActionBar bar = getSupportActionBar();
+		bar.setTitle("Search for images");
+		bar.setBackgroundDrawable(new ColorDrawable(Color.parseColor("#3399FF")));
 		setViews();
 	}
 

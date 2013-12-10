@@ -8,100 +8,88 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/background_light"
     tools:context=".FilterActivity" >
 
     <TextView
-        android:id="@+id/tvFilterTitle"
+        android:id="@+id/tvImageSize"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/tvColorFilter"
+        android:layout_alignParentTop="true"
+        android:text="@string/ImageSize"
+        android:gravity="center_vertical"
+        android:textSize="17sp" />
+
+    <Spinner
+        android:id="@+id/spImageSize"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:spinnerMode="dropdown"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvColorFilter"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_alignLeft="@+id/tvImageType"
+        android:layout_below="@+id/spImageSize"
+        android:text="@string/ColorFilter"
+        android:gravity="center_vertical"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/tvSiteFilter"
         android:layout_width="150dp"
         android:layout_height="35dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/spImageSize"
-        android:text="@string/FilterTitle"
-        android:textSize="20sp"
-        android:textStyle="bold|italic" />
+        android:layout_below="@+id/tvImageType"
+        android:text="@string/SiteFilter"
+        android:gravity="center_vertical"
+        android:textSize="17sp" />
 
-     <Button
-         android:id="@+id/bSave"
-         style="?android:attr/buttonStyleSmall"
-         android:layout_width="fill_parent"
-         android:layout_height="wrap_content"
-         android:layout_alignParentRight="true"
-         android:layout_centerVertical="true"
-         android:onClick="onSendOption"
-         android:text="@string/bSave"
-         android:textSize="20sp" />
+    <TextView
+        android:id="@+id/tvImageType"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/spColorFilter"
+        android:text="@string/ImageType"
+        android:gravity="center_vertical"
+        android:textSize="17sp" />
 
-     <TextView
-         android:id="@+id/tvSiteFilter"
-         android:layout_width="150dp"
-         android:layout_height="35dp"
-         android:layout_above="@+id/bSave"
-         android:layout_toLeftOf="@+id/spImageSize"
-         android:text="@string/SiteFilter"
-         android:layout_alignParentLeft="true"
-         android:textSize="15sp" />
+    <Spinner
+        android:id="@+id/spColorFilter"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spImageSize"
+        android:spinnerMode="dropdown"
+        android:textSize="12sp" />
 
-     <EditText
-         android:id="@+id/etSiteFilter"
-         android:layout_width="150dp"
-         android:layout_height="35dp"
-         android:layout_alignRight="@+id/bSave"
-         android:layout_alignTop="@+id/tvSiteFilter"
-         android:ems="10"
-         android:hint="photobucket.com"
-         android:textStyle="italic"
-         android:textSize="15sp" />
+    <Spinner
+        android:id="@+id/spImageType"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tvImageType"
+        android:spinnerMode="dropdown"
+        android:textSize="12sp" />
 
-     <TextView
-         android:id="@+id/tvImageType"
-         android:layout_width="150dp"
-         android:layout_height="35dp"
-         android:layout_above="@+id/tvSiteFilter"
-         android:layout_alignParentLeft="true"
-         android:text="@string/ImageType"
-         android:textSize="15sp" />
+    <EditText
+        android:id="@+id/etSiteFilter"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/spImageType"
+        android:ems="10"
+        android:hint="photobucket.com"
+        android:textSize="13sp"
+        android:textStyle="italic" >
 
-     <TextView
-         android:id="@+id/tvImageSize"
-         android:layout_width="150dp"
-         android:layout_height="35dp"
-         android:layout_above="@+id/tvColorFilter"
-         android:layout_alignParentLeft="true"
-         android:text="@string/ImageSize"
-         android:textSize="15sp" />
-
-     <TextView
-         android:id="@+id/tvColorFilter"
-         android:layout_width="150dp"
-         android:layout_height="35dp"
-         android:layout_above="@+id/tvImageType"
-         android:layout_alignParentLeft="true"
-         android:text="@string/ColorFilter"
-         android:textSize="15sp" />
-
-     <Spinner
-         android:id="@+id/spColorFilter"
-         android:layout_width="150dp"
-         android:layout_height="30dp"
-         android:layout_alignParentRight="true"
-         android:layout_alignTop="@+id/tvColorFilter"
-         android:textSize="15sp" />
-
-     <Spinner
-         android:id="@+id/spImageType"
-         android:layout_width="150dp"
-         android:layout_height="30dp"
-         android:layout_alignParentRight="true"
-         android:layout_below="@+id/tvColorFilter"
-         android:textSize="15sp" />
-
-     <Spinner
-         android:id="@+id/spImageSize"
-         android:layout_width="150dp"
-         android:layout_height="30dp"
-         android:layout_alignLeft="@+id/spColorFilter"
-         android:layout_alignTop="@+id/tvImageSize"
-         android:textSize="15sp" />
+        <requestFocus />
+    </EditText>
 
 </RelativeLayout>
