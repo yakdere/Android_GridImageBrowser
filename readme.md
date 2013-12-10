@@ -1,6 +1,6 @@
 # Google Image Search Android Application
 
-This application allow you to search different type of images in different shapes and colors with few filter options.
+This application allow you to search different type of images in different shapes and colors with filter options and share them to other apps.
 
 **Features**
 
@@ -13,7 +13,7 @@ This application allow you to search different type of images in different shape
 -Site (espn.com)
 *Subsequent searches will have any filters applied to the search results
 *User can tap on any image in results to see the image full-screen
-*User can scroll down “infinitely” to continue loading more image results
+*User can scroll down ï¿½infinitelyï¿½ to continue loading more image results
 *User can share an image to their friends or email it to themselves
 
 **Technical Challenges**
