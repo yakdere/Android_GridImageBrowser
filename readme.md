@@ -7,13 +7,13 @@ This application allow you to search different type of images in different shape
 * User can enter a search query that will display a grid of images from Google Images.
 * User can click on "settings" which allows selection of advanced search options
 * User can configure advanced search options such as:
-[] Size (small, medium, large, extra-large)
-[] Color filter (black, blue, brown, gray, green, etc...)
-[] Type (faces, photo, clip art, line art)
-[] Site (espn.com)
+- [] Size (small, medium, large, extra-large)
+- [] Color filter (black, blue, brown, gray, green, etc...)
+- [] Type (faces, photo, clip art, line art)
+- [] Site (espn.com)
 * Subsequent searches will have any filters applied to the search results
 * User can tap on any image in results to see the image full-screen
-* User can scroll down �infinitely� to continue loading more image results
+* User can scroll down infinitely to continue loading more image results
 * User can share an image to their friends or email it to themselves
 
 **Technical Challenges**
